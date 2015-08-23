@@ -1,0 +1,17 @@
+void setup()
+{
+
+Serial.begin(9600);
+ }
+
+void loop() {
+
+float average = 0;
+
+ for(int i = 0; i < 2000; i++) 
+ 
+ average = average + (.0264 * analogRead(A7) -13.51);
+ Serial.print(average);
+ Serial.print("mA    ");
+ 
+ }
